@@ -1,6 +1,7 @@
 package tech.bison.trainee17.zebche.pieces;
 
 import tech.bison.trainee17.zebche.Movement;
+import tech.bison.trainee17.zebche.pieces.Piece.Color;
 
 public class King extends Piece {
 
@@ -23,4 +24,13 @@ public class King extends Piece {
     }
     return false;
   }
+  
+  @Override
+	public String toString() {
+	  if (color == Color.WHITE) {
+		return "WK";
+	} else {
+		return "BK";
+	}
+	}
 }

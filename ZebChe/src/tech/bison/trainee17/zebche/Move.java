@@ -7,16 +7,20 @@ import tech.bison.trainee17.zebche.exceptions.SquareOccupiedException;
 public class Move {
 
   public enum MoveState {
-    SQUARE_EMPTY, INVALID_MOVE, INVALID_SQUARE, OCCUPIED_SQUARE, OK
+    SQUARE_EMPTY, INVALID_MOVE, INVALID_SQUARE, OCCUPIED_SQUARE, CANT_JUMP, OK
   }
 
   public static MoveState movePiece(Chessboard chessboard, Movement movement) {
     try {
       if (chessboard.isAValidMoveOfPiece(movement)) {
-        chessboard.addPiece(movement.getEnd(), chessboard.getPiece(movement.getStart()));
-        chessboard.removePiece(movement.getStart());
-        chessboard.getPiece(movement.getEnd()).incrementMoveCounter();
-        return MoveState.OK;
+    	  if (chessboard.isWayEmpty(movement)) {
+    		  chessboard.addPiece(movement.getEnd(), chessboard.getPiece(movement.getStart()));
+    		  chessboard.removePiece(movement.getStart());
+    		  chessboard.getPiece(movement.getEnd()).incrementMoveCounter();
+    		  return MoveState.OK;
+		} else {
+			return MoveState.CANT_JUMP;
+		}
       } else {
         return MoveState.INVALID_MOVE;
       }

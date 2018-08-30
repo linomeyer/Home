@@ -3,6 +3,7 @@ package tech.bison.trainee17.zebche;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import tech.bison.trainee17.zebche.console.ChessboardPrinter;
 import tech.bison.trainee17.zebche.exceptions.EmptySquareException;
 import tech.bison.trainee17.zebche.exceptions.InvalidSquareException;
 import tech.bison.trainee17.zebche.exceptions.SquareOccupiedException;
@@ -16,6 +17,11 @@ import tech.bison.trainee17.zebche.pieces.Queen;
 import tech.bison.trainee17.zebche.pieces.Rook;
 
 public class Chessboard {
+	
+  public enum StateOfKing {
+	  OK, CHECK, CHECKMATE	  
+  }
+	
   public final int height;
   public final int length;
   private HashMap<Square, Piece> chessboard;
@@ -174,4 +180,23 @@ public class Chessboard {
       return false;
     return true;
   }
+  
+  @Override
+	public String toString(){
+	  String chessboardAsString = "";
+		  for (int i = height; i > 0 ; i--) {
+			  chessboardAsString += i + " |";
+			  for(int j = 1; j <= length; j++) {
+				  try {
+					chessboardAsString += this.getPiece(new Square(j, i)).toString();
+				} catch (Exception e) {
+					chessboardAsString += ChessboardPrinter.SPACE;
+				}
+				  chessboardAsString += "|";
+			  }
+			  chessboardAsString += "\n";
+		  }
+		  chessboardAsString += "   A  B  C  D  E  F  G  H";
+	return chessboardAsString;
+	}
 }

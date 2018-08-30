@@ -21,4 +21,13 @@ public class Bishop extends Piece {
     }
     return false;
   }
+  
+  @Override
+	public String toString() {
+	  if (color == Color.WHITE) {
+		return "Wb";
+	} else {
+		return "Bb";
+	}
+	}
 }

@@ -1,6 +1,6 @@
 package tech.bison.trainee17.zebche;
 
-import static org.junit.Assert.assertThat;
+import static org.junit.Assert.*;
 
 import org.junit.Rule;
 import org.junit.Test;
@@ -75,5 +75,14 @@ public class MoveTest {
 
     assertThat(moveState, is(MoveState.INVALID_MOVE));
   }
+  
+  @Test
+public void chessboard_wayOfMoveIsNotEmpty_InvalidMove() throws Exception {
+	Chessboard chessboard = new Chessboard();
+	
+	MoveState moveState = Move.movePiece(chessboard, new Movement(new Square("A1"), new Square("A4")));
+	
+	assertThat(moveState, is(MoveState.CANT_JUMP));
+}
 
 }

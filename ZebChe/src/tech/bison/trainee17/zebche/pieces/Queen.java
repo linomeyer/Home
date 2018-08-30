@@ -21,5 +21,13 @@ public class Queen extends Piece {
     }
     return true;
   }
-
+  
+  @Override
+	public String toString() {
+	  if (color == Color.WHITE) {
+		return "Wq";
+	} else {
+		return "Bq";
+	}
+	}
 }
