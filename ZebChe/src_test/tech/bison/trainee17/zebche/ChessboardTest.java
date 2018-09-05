@@ -112,6 +112,17 @@ public void chessboard_isKingInCheck_false() throws Exception {
 	
 	assertThat(kingInCheck, is(false));
 }
+  @Test
+public void chessboard_isKingInCheck_falseBecauseOfDifferentColor() throws Exception {
+	Chessboard chessboard = new Chessboard(8, 8);
+	
+	chessboard.addPiece(new Square("C3"), new King(Color.BLACK));
+	chessboard.addPiece(new Square("C6"), new Rook(Color.BLACK));
+	
+	boolean kingInCheck = chessboard.isKingInCheck();
+	
+	assertThat(kingInCheck, is(false));
+}
   
   @Test
   public void chessboard_getSquaresOfKings_squaresOfKings() throws Exception {

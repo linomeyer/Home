@@ -169,7 +169,7 @@ public class Chessboard {
 		for (Square squareOfPiece : squaresOfAllPieces) {
 			Movement movement = new Movement(squareOfPiece, squareOfKing);
 			try {
-				if (isAValidMoveOfPiece(movement) && isWayEmpty(movement)) {
+				if (isAValidMoveOfPiece(movement) && isWayEmpty(movement) && getPiece(squareOfPiece).color != getPiece(squareOfKing).color) {
 					return true;
 				} else {
 				}
