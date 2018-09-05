@@ -2,6 +2,7 @@ package tech.bison.trainee17.zebche;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Set;
 
 import tech.bison.trainee17.zebche.console.ChessboardPrinter;
 import tech.bison.trainee17.zebche.exceptions.EmptySquareException;
@@ -159,8 +160,42 @@ public class Chessboard {
     }
     return true;
   }
+  
+  public boolean isKingInCheck() {
+	ArrayList<Square> squaresOfKing = getSquaresOfKings();
+	Set<Square> squaresOfAllPieces = chessboard.keySet();
+	
+	for (Square squareOfKing : squaresOfKing) {
+		for (Square squareOfPiece : squaresOfAllPieces) {
+			Movement movement = new Movement(squareOfPiece, squareOfKing);
+			try {
+				if (isAValidMoveOfPiece(movement) && isWayEmpty(movement)) {
+					return true;
+				} else {
+				}
+			} catch (Exception e) {
+			}
+		}
+	}
+	return false;
+  }
+  
+  public ArrayList<Square> getSquaresOfKings() {
+	  Set<Square> squares = chessboard.keySet();
+	  ArrayList<Square> squaresOfKings = new ArrayList<>();
+	  
+	  for (Square square : squares) {
+		try {
+			if (getPiece(square).equals(new King(Color.WHITE)) || getPiece(square).equals(new King(Color.BLACK))) {
+				squaresOfKings.add(square);
+			}
+		} catch (Exception e) {
+		}
+	}
+	return squaresOfKings;
+}
 
-  @Override
+@Override
   public boolean equals(Object obj) {
     if (this == obj)
       return true;

@@ -7,7 +7,6 @@ import static org.hamcrest.CoreMatchers.is;
 
 import tech.bison.trainee17.zebche.Chessboard;
 import tech.bison.trainee17.zebche.Move;
-import tech.bison.trainee17.zebche.Move.MoveState;
 import tech.bison.trainee17.zebche.Movement;
 import tech.bison.trainee17.zebche.Square;
 
