@@ -194,6 +194,32 @@ public class Chessboard {
 		return squareOfKing;
 	}
 
+	public boolean isKingInCheckMate(Color color) {
+		if (!isKingInCheck(color)) {
+			return false;
+		}
+		HashMap<Square, Piece> copyOfChessboardMap = new HashMap<>(chessboard);
+		Set<Square> squaresOfPieces = copyOfChessboardMap.keySet();
+		for (Square squareOfPiece : squaresOfPieces) {
+			try {
+				if (getPiece(squareOfPiece).color.equals(color)) {
+					for (int x = 1; x <= length; x++) {
+						for (int y = 1; y <= height; y++) {
+							Square squareToMove = new Square(x, y);
+							Move.movePiece(this, new Movement(squareOfPiece, squareToMove));
+							if (!isKingInCheck(color)) {
+								return false;
+							}
+							Move.movePiece(this, new Movement(squareToMove, squareOfPiece));
+						}
+					}
+				}
+			} catch (Exception e) {
+			}
+		}
+		return true;
+	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)

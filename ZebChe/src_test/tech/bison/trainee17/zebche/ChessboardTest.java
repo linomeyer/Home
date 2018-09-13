@@ -131,4 +131,36 @@ public class ChessboardTest {
 		assertThat(squaresOfKings, is(new Square("E1")));
 	}
 
+	@Test
+	public void chessboard_isKingInCheckmate_true() throws Exception {
+		Chessboard chessboard = new Chessboard(8, 8);
+
+		chessboard.addPiece(new Square("A1"), new King(Color.WHITE));
+		chessboard.addPiece(new Square("A8"), new Rook(Color.BLACK));
+		chessboard.addPiece(new Square("B8"), new Rook(Color.BLACK));
+
+		assertThat(chessboard.isKingInCheckMate(Color.WHITE), is(true));
+	}
+
+	@Test
+	public void chessboard_isKingInCheckmate_alliedPieceSafesKing() throws Exception {
+		Chessboard chessboard = new Chessboard(8, 8);
+
+		chessboard.addPiece(new Square("A1"), new King(Color.WHITE));
+		chessboard.addPiece(new Square("A8"), new Rook(Color.BLACK));
+		chessboard.addPiece(new Square("B8"), new Rook(Color.BLACK));
+		chessboard.addPiece(new Square("H2"), new Rook(Color.WHITE));
+
+		assertThat(chessboard.isKingInCheckMate(Color.WHITE), is(false));
+	}
+
+	@Test
+	public void chessboard_isKingInCheckmate_kingSafesHimself() throws Exception {
+		Chessboard chessboard = new Chessboard(8, 8);
+
+		chessboard.addPiece(new Square("A1"), new King(Color.BLACK));
+		chessboard.addPiece(new Square("A8"), new Rook(Color.WHITE));
+
+		assertThat(chessboard.isKingInCheckMate(Color.BLACK), is(false));
+	}
 }
