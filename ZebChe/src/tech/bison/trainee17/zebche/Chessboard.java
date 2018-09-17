@@ -26,6 +26,7 @@ public class Chessboard {
 	public final int height;
 	public final int length;
 	private HashMap<Square, Piece> chessboard;
+	private ArrayList<MoveSave> moveSaves = new ArrayList<>();
 
 	/**
 	 * Standard Chessboard 8x8 with 16 black and 16 white pieces
@@ -163,6 +164,9 @@ public class Chessboard {
 
 	public boolean isKingInCheck(Color color) {
 		Square squareOfKing = getSquareOfKing(color);
+		if (squareOfKing == null) {
+			return false;
+		}
 		Set<Square> squaresOfAllPieces = chessboard.keySet();
 
 		for (Square squareOfPiece : squaresOfAllPieces) {
@@ -206,11 +210,11 @@ public class Chessboard {
 					for (int x = 1; x <= length; x++) {
 						for (int y = 1; y <= height; y++) {
 							Square squareToMove = new Square(x, y);
-							Move.movePiece(this, new Movement(squareOfPiece, squareToMove));
+							Move.movePieceVirtually(this, new Movement(squareOfPiece, squareToMove));
 							if (!isKingInCheck(color)) {
 								return false;
 							}
-							Move.movePiece(this, new Movement(squareToMove, squareOfPiece));
+							Move.movePieceVirtually(this, new Movement(squareToMove, squareOfPiece));
 						}
 					}
 				}
@@ -258,5 +262,13 @@ public class Chessboard {
 		}
 		chessboardAsString += "   A  B  C  D  E  F  G  H";
 		return chessboardAsString;
+	}
+
+	public void safeMove(Piece piece, Movement movement) {
+		moveSaves.add(new MoveSave(piece, movement));
+	}
+
+	public ArrayList<MoveSave> getMoveSaves() {
+		return moveSaves;
 	}
 }
