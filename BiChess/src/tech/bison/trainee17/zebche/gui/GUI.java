@@ -3,6 +3,8 @@ package tech.bison.trainee17.zebche.gui;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Rectangle;
 
 public class GUI {
@@ -142,8 +144,17 @@ public class GUI {
 	Label lblGameState;
 	@FXML
 	Label lblLastTurn;
+	@FXML
+	Label WK;
+	@FXML
+	ImageView img_WK;
+
+	@FXML
+	public void OnMouseClickedPiece(MouseEvent event) {
+	}
 
 	@FXML
 	public void startNewGame() {
 	}
+
 }
