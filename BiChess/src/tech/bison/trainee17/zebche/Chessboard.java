@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Set;
 
-import tech.bison.trainee17.zebche.console.ChessboardPrinter;
 import tech.bison.trainee17.zebche.exceptions.EmptySquareException;
 import tech.bison.trainee17.zebche.exceptions.InvalidSquareException;
 import tech.bison.trainee17.zebche.exceptions.SquareOccupiedException;
+import tech.bison.trainee17.zebche.gui.ChessboardPrinter;
 import tech.bison.trainee17.zebche.pieces.Bishop;
 import tech.bison.trainee17.zebche.pieces.King;
 import tech.bison.trainee17.zebche.pieces.Knight;
@@ -18,10 +18,6 @@ import tech.bison.trainee17.zebche.pieces.Queen;
 import tech.bison.trainee17.zebche.pieces.Rook;
 
 public class Chessboard {
-
-	public enum StateOfKing {
-		OK, CHECK, CHECKMATE
-	}
 
 	public final int height;
 	public final int length;

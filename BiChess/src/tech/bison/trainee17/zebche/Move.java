@@ -3,6 +3,7 @@ package tech.bison.trainee17.zebche;
 import tech.bison.trainee17.zebche.exceptions.EmptySquareException;
 import tech.bison.trainee17.zebche.exceptions.InvalidSquareException;
 import tech.bison.trainee17.zebche.exceptions.SquareOccupiedException;
+import tech.bison.trainee17.zebche.pieces.Pawn;
 import tech.bison.trainee17.zebche.pieces.Piece;
 import tech.bison.trainee17.zebche.pieces.Piece.Color;
 
@@ -25,10 +26,19 @@ public class Move {
 					return MoveState.CANT_JUMP;
 				}
 			} else {
-				return MoveState.INVALID_MOVE;
+				if (chessboard.getPiece(movement.getStart()).equals(new Pawn(Color.WHITE))
+						|| chessboard.getPiece(movement.getStart()).equals(new Pawn(Color.BLACK))) {
+					return capturePieceWithPawn(chessboard, movement);
+				} else {
+					return MoveState.INVALID_MOVE;
+				}
 			}
 		} catch (SquareOccupiedException e) {
 			try {
+				if (chessboard.getPiece(movement.getStart()).equals(new Pawn(Color.WHITE))
+						|| chessboard.getPiece(movement.getStart()).equals(new Pawn(Color.BLACK))) {
+					return MoveState.INVALID_MOVE;
+				}
 				capturePiece(chessboard, movement.getStart(), movement.getEnd());
 				whiteOnTurn = whiteOnTurn == true ? false : true;
 				moveCounter++;
@@ -45,6 +55,24 @@ public class Move {
 		} catch (EmptySquareException e) {
 			return MoveState.SQUARE_EMPTY;
 		}
+	}
+
+	private static MoveState capturePieceWithPawn(Chessboard chessboard, Movement movement)
+			throws InvalidSquareException, EmptySquareException, SquareOccupiedException {
+		if (chessboard.getPiece(movement.getStart()).color == Color.WHITE) {
+			if (movement.getYMovement() == 1 && Math.abs(movement.getXMovement()) == 1) {
+				capturePiece(chessboard, movement.getStart(), movement.getEnd());
+				whiteOnTurn = whiteOnTurn == true ? false : true;
+				moveCounter++;
+				return MoveState.PIECE_CAPTURED;
+			}
+		} else if (movement.getYMovement() == -1 && Math.abs(movement.getXMovement()) == 1) {
+			capturePiece(chessboard, movement.getStart(), movement.getEnd());
+			whiteOnTurn = whiteOnTurn == true ? false : true;
+			moveCounter++;
+			return MoveState.PIECE_CAPTURED;
+		}
+		return MoveState.INVALID_MOVE;
 	}
 
 	public static MoveState turn(Chessboard chessboard, Movement movement, Color colorOfMove)

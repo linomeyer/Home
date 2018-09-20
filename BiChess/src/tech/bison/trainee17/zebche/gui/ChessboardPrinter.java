@@ -1,4 +1,4 @@
-package tech.bison.trainee17.zebche.console;
+package tech.bison.trainee17.zebche.gui;
 
 import tech.bison.trainee17.zebche.Chessboard;
 

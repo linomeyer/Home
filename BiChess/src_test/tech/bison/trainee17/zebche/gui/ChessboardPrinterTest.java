@@ -1,4 +1,4 @@
-package tech.bison.trainee17.zebche.console;
+package tech.bison.trainee17.zebche.gui;
 
 import static org.junit.Assert.*;
 
@@ -9,6 +9,7 @@ import tech.bison.trainee17.zebche.Chessboard;
 import tech.bison.trainee17.zebche.Move;
 import tech.bison.trainee17.zebche.Movement;
 import tech.bison.trainee17.zebche.Square;
+import tech.bison.trainee17.zebche.gui.ChessboardPrinter;
 
 public class ChessboardPrinterTest {
 	@Test

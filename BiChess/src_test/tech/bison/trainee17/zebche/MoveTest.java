@@ -11,6 +11,7 @@ import org.junit.rules.ExpectedException;
 import tech.bison.trainee17.zebche.Move.MoveState;
 import tech.bison.trainee17.zebche.exceptions.EmptySquareException;
 import tech.bison.trainee17.zebche.pieces.King;
+import tech.bison.trainee17.zebche.pieces.Pawn;
 import tech.bison.trainee17.zebche.pieces.Piece.Color;
 import tech.bison.trainee17.zebche.pieces.Rook;
 
@@ -147,5 +148,30 @@ public class MoveTest {
 
 		assertThat(chessboard.getPiece(new Square("A2")), is(new Rook(Color.BLACK)));
 		assertThat(chessboard.getPiece(new Square("A1")), is(new King(Color.BLACK)));
+	}
+
+	@Test
+	public void chessboard_pawn_capturePieceDiagonally() throws Exception {
+		Chessboard chessboard = new Chessboard(8, 8);
+
+		chessboard.addPiece(new Square("A1"), new Pawn(Color.WHITE));
+		chessboard.addPiece(new Square("B2"), new Rook(Color.BLACK));
+
+		Move.movePiece(chessboard, new Movement(new Square("A1"), new Square("B2")));
+
+		assertThat(chessboard.getPiece(new Square("B2")), is(new Pawn(Color.WHITE)));
+	}
+
+	@Test
+	public void chessboard_pawn_cantCapturePieceVertically() throws Exception {
+		Chessboard chessboard = new Chessboard(8, 8);
+
+		chessboard.addPiece(new Square("A1"), new Pawn(Color.WHITE));
+		chessboard.addPiece(new Square("A2"), new Rook(Color.BLACK));
+
+		MoveState moveState = Move.movePiece(chessboard, new Movement(new Square("A1"), new Square("A2")));
+
+		assertThat(moveState, is(MoveState.INVALID_MOVE));
+		Move.whiteOnTurn = true;
 	}
 }

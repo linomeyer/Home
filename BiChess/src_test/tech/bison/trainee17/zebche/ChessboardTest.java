@@ -163,4 +163,5 @@ public class ChessboardTest {
 
 		assertThat(chessboard.isKingInCheckMate(Color.BLACK), is(false));
 	}
+
 }
