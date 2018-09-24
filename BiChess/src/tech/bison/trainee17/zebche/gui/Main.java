@@ -5,8 +5,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import tech.bison.trainee17.zebche.Chessboard;
 
 public class Main extends Application {
+	public static Chessboard chessboard;
 
 	public static void main(String[] args) {
 		launch(args);
@@ -23,6 +25,7 @@ public class Main extends Application {
 		Scene scene = new Scene(root);
 		primaryStage.setScene(scene);
 		primaryStage.show();
+		chessboard = new Chessboard();
 	}
 
 }

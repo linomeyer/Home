@@ -267,4 +267,24 @@ public class Chessboard {
 	public ArrayList<MoveSave> getMoveSaves() {
 		return moveSaves;
 	}
+
+	public ArrayList<Square> getPossibleMoveSquaresOfPiece(Piece piece, Square squareOfPiece) {
+		ArrayList<Square> possibleMoveSquares = new ArrayList<>();
+		for (int i = 1; i <= height; i++) {
+			for (int j = 1; j <= length; j++) {
+				Square squareToMove = new Square(j, i);
+				Movement movement = new Movement(squareOfPiece, squareToMove);
+				try {
+					if (isAValidMoveOfPiece(movement) && isWayEmpty(movement)) {
+						if (getPiece(squareToMove).color != getPiece(squareOfPiece).color) {
+							possibleMoveSquares.add(squareToMove);
+						}
+					}
+				} catch (Exception e) {
+					possibleMoveSquares.add(squareToMove);
+				}
+			}
+		}
+		return possibleMoveSquares;
+	}
 }

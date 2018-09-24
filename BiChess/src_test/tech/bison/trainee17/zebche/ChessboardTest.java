@@ -3,6 +3,8 @@ package tech.bison.trainee17.zebche;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
+import java.util.ArrayList;
+
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -162,6 +164,21 @@ public class ChessboardTest {
 		chessboard.addPiece(new Square("A8"), new Rook(Color.WHITE));
 
 		assertThat(chessboard.isKingInCheckMate(Color.BLACK), is(false));
+	}
+
+	@Test
+	public void chessboard_getPossibleMoveSquaresOfPiece_possibleMoveSquaresOfPiece() throws Exception {
+		Chessboard chessboard = new Chessboard(8, 8);
+
+		chessboard.addPiece(new Square("A1"), new King(Color.WHITE));
+		chessboard.addPiece(new Square("A2"), new Rook(Color.BLACK));
+		chessboard.addPiece(new Square("B2"), new Rook(Color.WHITE));
+
+		ArrayList<Square> squares = new ArrayList<>();
+		squares.add(new Square("B1"));
+		squares.add(new Square("A2"));
+
+		assertThat(chessboard.getPossibleMoveSquaresOfPiece(new King(Color.WHITE), new Square("A1")), is(squares));
 	}
 
 }

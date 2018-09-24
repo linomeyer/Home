@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="349.0" prefWidth="575.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sursee.bbzw.inf17a.personenapplikation.application.GUI">
+   <children>
+      <AnchorPane prefHeight="433.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="txtPNr" layoutX="98.0" layoutY="76.0" />
+            <TextField fx:id="txtName" layoutX="98.0" layoutY="123.0" />
+            <TextField fx:id="txtVorname" layoutX="99.0" layoutY="168.0" />
+            <Label fx:id="lblPNr" layoutX="34.0" layoutY="80.0" text="PNr" />
+            <Label fx:id="lblVorname" layoutX="34.0" layoutY="172.0" text="Vornamen" />
+            <Label fx:id="lblName" layoutX="34.0" layoutY="127.0" text="Namen" />
+            <TextField fx:id="txtAnrede" layoutX="98.0" layoutY="209.0" />
+            <Label fx:id="lblVorname1" layoutX="33.0" layoutY="213.0" text="Anrede" />
+            <TextField fx:id="txtEintrittsjahr" layoutX="98.0" layoutY="251.0" />
+            <Label fx:id="lblVorname11" layoutX="33.0" layoutY="255.0" text="Eintrittsjahr" />
+            <TextField fx:id="txtPLZ" layoutX="342.0" layoutY="76.0" />
+            <Label fx:id="lblPNr1" layoutX="278.0" layoutY="80.0" text="PLZ" />
+            <TextField fx:id="txtOrt" layoutX="342.0" layoutY="123.0" />
+            <Label fx:id="lblPNr11" layoutX="278.0" layoutY="127.0" text="Ort" />
+            <TextField fx:id="txtSalaer" layoutX="342.0" layoutY="168.0" />
+            <Label fx:id="lblPNr111" layoutX="278.0" layoutY="172.0" text="Salär" />
+            <TextField fx:id="txtPensum" layoutX="342.0" layoutY="209.0" />
+            <Label fx:id="lblPNr1111" layoutX="278.0" layoutY="213.0" text="Pensum" />
+            <ToolBar prefHeight="61.0" prefWidth="575.0">
+               <items>
+                  <Button fx:id="btnLeftOuterArrow" mnemonicParsing="false" onAction="#changePersonOuterLeft" prefHeight="39.0" prefWidth="53.0" text="&lt;&lt;-">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnLeftArrow" mnemonicParsing="false" onAction="#changePersonLeft" prefHeight="39.0" prefWidth="53.0" text="&lt;-">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="txtPerson" editable="false" prefHeight="33.0" prefWidth="72.0" />
+                  <Button fx:id="btnRightArrow" mnemonicParsing="false" onAction="#changePersonRight" prefHeight="39.0" prefWidth="51.0" text="-&gt;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnRightOuterArrow" mnemonicParsing="false" onAction="#changePersonOuterRight" prefHeight="39.0" prefWidth="51.0" text="-&gt;&gt;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnAddPerson" mnemonicParsing="false" onAction="#addPerson" text="+" />
+                  <Button fx:id="btnRemovePerson" mnemonicParsing="false" onAction="#removePerson" text="-" />
+               </items>
+            </ToolBar>
+            <ToolBar layoutY="298.0" prefHeight="52.0" prefWidth="575.0">
+               <items>
+                  <Button fx:id="btnDropChanges" mnemonicParsing="false" onAction="#dropChanges" prefHeight="33.0" prefWidth="145.0" text="Änderungen verwerfen" />
+                  <Button fx:id="btnSaveChanges" mnemonicParsing="false" onAction="#saveChanges" prefHeight="30.0" prefWidth="141.0" text="Änderungen speichern" />
+               </items>
+            </ToolBar>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

@@ -1,11 +1,15 @@
 package tech.bison.trainee17.zebche.gui;
 
+import java.util.ArrayList;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Rectangle;
+import tech.bison.trainee17.zebche.Square;
+import tech.bison.trainee17.zebche.pieces.Piece;
 
 public class GUI {
 	@FXML
@@ -145,12 +149,22 @@ public class GUI {
 	@FXML
 	Label lblLastTurn;
 	@FXML
-	Label WK;
-	@FXML
-	ImageView img_WK;
+	ImageView WK;
 
 	@FXML
-	public void OnMouseClickedPiece(MouseEvent event) {
+	public void OnMouseClickedPiece(MouseEvent mouseEvent) {
+		try {
+			ImageView pieceImg = (ImageView) mouseEvent.getSource();
+			double xPos = pieceImg.getLayoutX();
+			double yPos = pieceImg.getLayoutY();
+			Square square = Converter.convertCoordinatesToSquare(xPos, yPos);
+			Piece piece = Converter.convertIdToPiece(pieceImg.getId());
+			ArrayList<Square> possibleMoveSquaresOfPiece = Main.chessboard.getPossibleMoveSquaresOfPiece(piece, square);
+
+			Converter.convertSquaresToCoordinates(possibleMoveSquaresOfPiece);
+			lblColorOnTurn.setText(square.toString() + " " + piece.toString());
+		} catch (Exception e) {
+		}
 	}
 
 	@FXML
