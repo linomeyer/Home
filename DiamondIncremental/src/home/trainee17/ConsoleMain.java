@@ -6,7 +6,6 @@ import java.io.InputStreamReader;
 public class ConsoleMain {
 	public static void main(String[] args) {
 
-		// TODO: handle exception
 		String input = "";
 		while (input != "quit") {
 			try {

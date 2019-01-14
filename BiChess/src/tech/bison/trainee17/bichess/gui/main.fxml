@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="839.0" prefWidth="1108.0" style="-fx-background-color: #0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tech.bison.trainee17.bichess.gui.GUIController">
+   <children>
+      <AnchorPane layoutX="6.0" layoutY="-3.0" prefHeight="848.0" prefWidth="1102.0">
+         <children>
+            <AnchorPane layoutX="50.0" layoutY="50.0" prefHeight="700.0" prefWidth="700.0">
+               <children>
+                  <AnchorPane layoutX="50.0" layoutY="50.0" prefHeight="600.0" prefWidth="600.0">
+                     <children>
+                        <Rectangle id="E1" fx:id="E1" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="300.0" layoutY="525.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" height="75.0" layoutX="225.0" layoutY="525.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="H1" fx:id="H1" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="525.0" layoutY="525.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="A1" fx:id="A1" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutY="525.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="B1" fx:id="B1" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="75.0" layoutY="525.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="C1" fx:id="C1" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="150.0" layoutY="525.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="D1" fx:id="D1" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="225.0" layoutY="525.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="H2" fx:id="H2" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="525.0" layoutY="450.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="F1" fx:id="F1" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="375.0" layoutY="525.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="F2" fx:id="F2" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="375.0" layoutY="450.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="G2" fx:id="G2" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="450.0" layoutY="450.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="D2" fx:id="D2" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="225.0" layoutY="450.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="E2" fx:id="E2" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="300.0" layoutY="450.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="B2" fx:id="B2" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="75.0" layoutY="450.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="A2" fx:id="A2" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutY="450.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="A3" fx:id="A3" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutY="375.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="C2" fx:id="C2" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="150.0" layoutY="450.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="G3" fx:id="G3" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="450.0" layoutY="375.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="H3" fx:id="H3" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="525.0" layoutY="375.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="E3" fx:id="E3" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="300.0" layoutY="375.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="B3" fx:id="B3" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="75.0" layoutY="375.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="C3" fx:id="C3" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="150.0" layoutY="375.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="D3" fx:id="D3" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="225.0" layoutY="375.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="H4" fx:id="H4" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="525.0" layoutY="300.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="F3" fx:id="F3" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="375.0" layoutY="375.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="F4" fx:id="F4" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="375.0" layoutY="300.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="G4" fx:id="G4" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="450.0" layoutY="300.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="D4" fx:id="D4" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="225.0" layoutY="300.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="E4" fx:id="E4" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="300.0" layoutY="300.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="B4" fx:id="B4" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="75.0" layoutY="300.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="C4" fx:id="C4" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="150.0" layoutY="300.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="A4" fx:id="A4" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutY="300.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="G5" fx:id="G5" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="450.0" layoutY="225.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="H5" fx:id="H5" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="525.0" layoutY="225.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="E5" fx:id="E5" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="300.0" layoutY="225.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="F5" fx:id="F5" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="375.0" layoutY="225.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="D5" fx:id="D5" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="225.0" layoutY="225.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="C5" fx:id="C5" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="150.0" layoutY="225.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="H6" fx:id="H6" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="525.0" layoutY="150.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="B5" fx:id="B5" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="75.0" layoutY="225.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="G6" fx:id="G6" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="450.0" layoutY="150.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="A5" fx:id="A5" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutY="225.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="F6" fx:id="F6" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="375.0" layoutY="150.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="E6" fx:id="E6" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="300.0" layoutY="150.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="D6" fx:id="D6" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="225.0" layoutY="150.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="C6" fx:id="C6" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="150.0" layoutY="150.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="A6" fx:id="A6" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutY="150.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="G7" fx:id="G7" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="450.0" layoutY="75.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="F7" fx:id="F7" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="375.0" layoutY="75.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="E7" fx:id="E7" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="300.0" layoutY="75.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="D7" fx:id="D7" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="225.0" layoutY="75.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="B6" fx:id="B6" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="75.0" layoutY="150.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="C7" fx:id="C7" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="150.0" layoutY="75.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="H8" fx:id="H8" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="525.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="H7" fx:id="H7" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="525.0" layoutY="75.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="G8" fx:id="G8" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="450.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="A7" fx:id="A7" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutY="75.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="F8" fx:id="F8" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="375.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="E8" fx:id="E8" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="300.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="D8" fx:id="D8" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="225.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="C8" fx:id="C8" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="150.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="B8" fx:id="B8" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="75.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="B7" fx:id="B7" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" layoutX="75.0" layoutY="75.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <Rectangle id="A8" fx:id="A8" arcHeight="5.0" arcWidth="5.0" fill="#f5ad6f" height="75.0" stroke="#c3834c" strokeType="INSIDE" styleClass="main.css" width="75.0" />
+                        <Rectangle id="G1" fx:id="G1" arcHeight="5.0" arcWidth="5.0" fill="#c3834c" height="75.0" layoutX="450.0" layoutY="525.0" stroke="#c3834c" strokeType="INSIDE" width="75.0" />
+                        <ImageView id="WK" fx:id="WK" fitHeight="75.0" fitWidth="75.0" layoutX="300.0" layoutY="525.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@white_king.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="BP1" fx:id="BP1" fitHeight="75.0" fitWidth="75.0" layoutY="75.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@black_pawn.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="BR1" fx:id="BR1" fitHeight="75.0" fitWidth="75.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@black_rook.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="BP2" fx:id="BP2" fitHeight="75.0" fitWidth="75.0" layoutX="75.0" layoutY="75.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@black_pawn.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="BN1" fx:id="BN1" fitHeight="75.0" fitWidth="75.0" layoutX="75.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@black_knight.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="BP3" fx:id="BP3" fitHeight="75.0" fitWidth="75.0" layoutX="150.0" layoutY="75.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@black_pawn.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="BB1" fx:id="BB1" fitHeight="75.0" fitWidth="75.0" layoutX="150.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@black_bishop.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="BP4" fx:id="BP4" fitHeight="75.0" fitWidth="75.0" layoutX="225.0" layoutY="75.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@black_pawn.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="BQ" fx:id="BQ" fitHeight="75.0" fitWidth="75.0" layoutX="225.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@black_queen.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="BP5" fx:id="BP5" fitHeight="75.0" fitWidth="75.0" layoutX="300.0" layoutY="75.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@black_pawn.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="BK" fx:id="BK" fitHeight="75.0" fitWidth="75.0" layoutX="300.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@black_king.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="BP6" fx:id="BP6" fitHeight="75.0" fitWidth="75.0" layoutX="375.0" layoutY="75.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@black_pawn.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="BB2" fx:id="BB2" fitHeight="75.0" fitWidth="75.0" layoutX="375.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@black_bishop.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="BP7" fx:id="BP7" fitHeight="75.0" fitWidth="75.0" layoutX="450.0" layoutY="75.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@black_pawn.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="BP8" fx:id="BP8" fitHeight="75.0" fitWidth="75.0" layoutX="525.0" layoutY="75.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@black_pawn.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="BN2" fx:id="BN2" fitHeight="75.0" fitWidth="75.0" layoutX="450.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@black_knight.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="BR2" fx:id="BR2" fitHeight="75.0" fitWidth="75.0" layoutX="525.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@black_rook.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="WP1" fx:id="WP1" fitHeight="75.0" fitWidth="75.0" layoutY="450.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@white_pawn.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="WP2" fx:id="WP2" fitHeight="75.0" fitWidth="75.0" layoutX="75.0" layoutY="450.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@white_pawn.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="WP3" fx:id="WP3" fitHeight="75.0" fitWidth="75.0" layoutX="150.0" layoutY="450.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@white_pawn.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="WP4" fx:id="WP4" fitHeight="75.0" fitWidth="75.0" layoutX="225.0" layoutY="450.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@white_pawn.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="WP5" fx:id="WP5" fitHeight="75.0" fitWidth="75.0" layoutX="300.0" layoutY="450.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@white_pawn.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="WP6" fx:id="WP6" fitHeight="75.0" fitWidth="75.0" layoutX="375.0" layoutY="450.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@white_pawn.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="WP7" fx:id="WP7" fitHeight="75.0" fitWidth="75.0" layoutX="450.0" layoutY="450.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@white_pawn.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="WP8" fx:id="WP8" fitHeight="75.0" fitWidth="75.0" layoutX="525.0" layoutY="450.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@white_pawn.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="WR1" fx:id="WR1" fitHeight="75.0" fitWidth="75.0" layoutY="525.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@white_rook.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="WN1" fx:id="WN1" fitHeight="75.0" fitWidth="75.0" layoutX="75.0" layoutY="525.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@white_knight.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="WB1" fx:id="WB1" fitHeight="75.0" fitWidth="75.0" layoutX="150.0" layoutY="525.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@white_bishop.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="WQ" fx:id="WQ" fitHeight="75.0" fitWidth="75.0" layoutX="225.0" layoutY="525.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@white_queen.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="WR2" fx:id="WR2" fitHeight="75.0" fitWidth="75.0" layoutX="525.0" layoutY="525.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@white_rook.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="WN2" fx:id="WN2" fitHeight="75.0" fitWidth="75.0" layoutX="450.0" layoutY="525.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@white_knight.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView id="WB2" fx:id="WB2" fitHeight="75.0" fitWidth="75.0" layoutX="375.0" layoutY="525.0" onMouseClicked="#OnMouseClickedPiece" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@white_bishop.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="14.0" layoutY="77.0" text="8">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="673.0" layoutY="305.0" text="5">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="673.0" layoutY="232.0" text="6">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="673.0" layoutY="155.0" text="7">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="673.0" layoutY="77.0" text="8">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="598.0" layoutY="14.0" text="H">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="522.0" layoutY="14.0" text="G">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="451.0" layoutY="14.0" text="F">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="375.0" layoutY="14.0" text="E">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="303.0" layoutY="14.0" text="D">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="223.0" layoutY="14.0" text="C">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="150.0" layoutY="14.0" text="B">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="75.0" layoutY="14.0" text="A">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="602.0" text="1">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="529.0" text="2">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="461.0" text="3">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="380.0" text="4">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="305.0" text="5">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="232.0" text="6">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="155.0" text="7">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="75.0" layoutY="669.0" text="A">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="150.0" layoutY="669.0" text="B">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="223.0" layoutY="669.0" text="C">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="303.0" layoutY="669.0" text="D">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="375.0" layoutY="669.0" text="E">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="451.0" layoutY="669.0" text="F">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="522.0" layoutY="669.0" text="G">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="598.0" layoutY="669.0" text="H">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="673.0" layoutY="602.0" text="1">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="673.0" layoutY="529.0" text="2">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="673.0" layoutY="453.0" text="3">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="673.0" layoutY="380.0" text="4">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="796.0" layoutY="35.0" prefHeight="730.0" prefWidth="270.0">
+               <children>
+                  <Button fx:id="btnStart" layoutX="14.0" layoutY="49.0" mnemonicParsing="false" onMouseClicked="#startNewGame" prefHeight="52.0" prefWidth="168.0" text="Start New Game">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="lblColorOnTurn" layoutX="14.0" layoutY="126.0" text="Weiss ist am Zug.">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGameState" layoutX="14.0" layoutY="168.0" opacity="0.0" prefHeight="25.0" prefWidth="75.0" text="Schach!!!" textFill="RED">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblLastTurn" layoutX="14.0" layoutY="213.0" text="Letzter Zug: ">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

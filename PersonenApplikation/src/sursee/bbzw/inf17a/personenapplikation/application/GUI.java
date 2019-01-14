@@ -21,8 +21,6 @@ import sursee.bbzw.inf17a.personenapplikation.Person;
 
 public class GUI {
 
-	private static final long serialVersionUID = 1L;
-
 	@FXML
 	TextField txtPNr;
 	@FXML
