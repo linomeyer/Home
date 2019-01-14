@@ -15,6 +15,7 @@ public class Diamond {
 		List<List<Character>> rows = new Diamond(letter).getRows();
 		for (int i = 0; i < rows.size(); i++) {
 			List<Character> row = rows.get(i);
+
 			for (int j = 0; j < row.size(); j++) {
 				output += String.valueOf(row.get(j));
 			}
