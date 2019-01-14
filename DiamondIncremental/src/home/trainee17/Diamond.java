@@ -31,6 +31,7 @@ public class Diamond {
 		for (int i = 'A'; i < letter; i++) {
 			letters.add((char) i);
 		}
+
 		for (int i = letter; i >= 'A'; i--) {
 			letters.add((char) i);
 		}
